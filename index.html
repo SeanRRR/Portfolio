@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sean Ruan — computer science student at the University of Virginia. Selected work in software engineering, machine learning, and robotics." />
+    <meta name="theme-color" content="#0c1010" />
+    <meta property="og:title" content="Sean Ruan — Software & Systems" />
+    <meta property="og:description" content="Selected work in software engineering, machine learning, and robotics." />
+    <meta property="og:type" content="website" />
+    <title>Sean Ruan — Software & Systems</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell nav-inner">
+        <a class="wordmark" href="#top" aria-label="Sean Ruan, home">sean<span>.ruan</span><span class="cursor" aria-hidden="true">_</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-github" href="https://github.com/SeanRRR" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="shell">
+      <section class="hero" aria-labelledby="intro-title">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Computer science @ University of Virginia</p>
+        <h1 id="intro-title">Hey, I’m Sean<span class="accent">.</span></h1>
+        <p class="hero-subtitle">Software engineering, robotics, and machine learning.</p>
+        <p class="hero-description">I’m a CS student interested in building useful software and understanding how it works beneath the surface. My work spans web applications, autonomous navigation, and sensor-based machine learning.</p>
+        <div class="hero-links">
+          <a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+        </div>
+        <dl class="contact-links" id="contact">
+          <div class="contact-row">
+            <dt>Contact</dt>
+            <dd class="contact-panel">
+              <a class="contact-value" href="mailto:vbr6ah@virginia.edu"><span class="contact-prefix">email:</span> vbr6ah@virginia.edu</a>
+              <button id="copy-email" class="contact-action" type="button" aria-label="Copy email address" hidden>Copy</button>
+            </dd>
+          </div>
+          <div class="contact-row">
+            <dt>Source</dt>
+            <dd class="contact-panel">
+              <a class="contact-value" href="https://github.com/SeanRRR" target="_blank" rel="noopener noreferrer"><span class="contact-prefix">github:</span> @SeanRRR<span class="sr-only"> (opens in a new tab)</span></a>
+              <a class="contact-action" href="https://github.com/SeanRRR" target="_blank" rel="noopener noreferrer" aria-label="Open SeanRRR on GitHub (opens in a new tab)">Open <span aria-hidden="true">↗</span></a>
+            </dd>
+          </div>
+        </dl>
+        <p class="sr-only" id="copy-status" role="status" aria-live="polite"></p>
+        <div class="hero-meta"><span>Charlottesville, VA</span><span>BSCS ’27 <span class="separator">/</span> MSCS ’28 expected</span></div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading"><div><p class="eyebrow section-index">01 / Selected work</p><h2 id="projects-title">A few things I’ve built<span class="accent">.</span></h2></div><a class="subtle-link" href="https://github.com/SeanRRR?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="card-bar"><span><span class="file-icon" aria-hidden="true">⌘</span> hoos-alert</span><span class="category">Web application</span></div>
+            <div class="card-content"><h3>HoosAlert</h3><p class="project-subtitle">Campus information, connected.</p><p class="project-description">A campus incident reporting application with a web frontend and backend. Incident history is stored in MongoDB, with optional LLM context for report scoring.</p><ul class="tags" aria-label="Technologies"><li>TypeScript</li><li>MongoDB</li><li>Docker</li></ul><a class="project-link" href="https://github.com/SeanRRR/HoosAlert" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span><span class="sr-only"> for HoosAlert (opens in a new tab)</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="card-bar"><span><span class="file-icon" aria-hidden="true">⌘</span> dr-nav</span><span class="category">Robotics research</span></div>
+            <div class="card-content"><h3>Dead-end-aware navigation</h3><p class="project-subtitle">Helping robots find a way forward.</p><p class="project-description">Research at UVA’s CRΔL on autonomous navigation using LiDAR and camera inputs. My work included mapping, local planning, and an Isaac Sim pipeline for training data collection.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>ROS 2</li><li>Isaac Sim</li></ul><a class="project-link" href="https://github.com/vigneshrl/ros2_drnav_deadend_recovery" target="_blank" rel="noopener noreferrer">View team repository <span aria-hidden="true">↗</span><span class="sr-only"> for DR.Nav (opens in a new tab)</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="card-bar"><span><span class="file-icon" aria-hidden="true">⌘</span> diracsens</span><span class="category">Mobile / ML</span></div>
+            <div class="card-content"><h3>Wearable sensor insights</h3><p class="project-subtitle">From sensor signals to a mobile screen.</p><p class="project-description">An Android application developed during my DiracSens internship. I worked on CNN-based sensor analysis, on-device model deployment, and accessible displays for health metrics.</p><ul class="tags" aria-label="Technologies"><li>Kotlin</li><li>PyTorch</li><li>SQLite</li></ul><a class="project-link" href="https://github.com/SeanRRR/DiracSens_Fall_Prevention" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span><span class="sr-only"> for DiracSens (opens in a new tab)</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="card-bar"><span><span class="file-icon" aria-hidden="true">⌘</span> movie-model</span><span class="category">Machine learning</span></div>
+            <div class="card-content"><h3>Movie revenue prediction</h3><p class="project-subtitle">A closer look at the box office.</p><p class="project-description">A movie revenue prediction project using TMDB data, preprocessing, and feature selection. Built for a Google Developer Groups ML competition.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>PyTorch</li><li>Scikit-learn</li></ul><a class="project-link" href="https://github.com/SeanRRR/Movie-model" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span><span class="sr-only"> for Movie model (opens in a new tab)</span></a></div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+    <footer class="shell footer">
+      <span>© <span id="year">2026</span> Sean Ruan</span>
+      <div class="footer-links">
+        <a href="mailto:vbr6ah@virginia.edu">Email <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/SeanRRR" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
